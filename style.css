@@ -3,22 +3,24 @@ body{
     justify-content: center;
 }
 .calculatorContainer{
-    display: grid;
-    grid-template-rows: auto;
+
+   display: flex;
     height: 100vh;
     width: 50vw;
     background-color: black;
     color: antiquewhite;
     border-radius: 2rem;
-    
+    flex-direction: column;
+    align-items: center;
 }
-.buttonContainer{
-    display: flex;
-    grid-template-columns: auto;
+.buttonsContainer{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
     background-color: rgb(32, 146, 102);
-    height: 100vh;
-    width: 100vw;
+    height: 50vh;
+    width: 45vw;
     flex-wrap: wrap;
+    margin-top: 12rem;
 }
 button{
     grid-template-columns: repeat(4 ,1fr);
@@ -32,4 +34,72 @@ button{
     width: 70%;
     height: 10vh;
     margin: 1rem;
+    text-align: center;
+    padding-top: 2rem;;
+}
+.oneButton{
+grid-row: 2/3;
+grid-column: 1/2;
+}
+.twoButton{
+    grid-row:2/3 ;
+    grid-column:2/3; 
+}
+.threeButton{
+    grid-row:2/3 ;
+    grid-column:3/4;
+}
+.fourButton{
+    grid-row:2/3 ;
+    grid-column:4/5; 
+}
+.fiveButton{
+    grid-row:3/4 ;
+    grid-column:1/2;
+}
+.sixButton{
+    grid-row:3/4 ;
+    grid-column:2/3;  
+}
+.sevenButton{
+    grid-row:3/4 ;
+    grid-column:3/4;
+}
+.eightButton{
+    grid-row:3/4 ;
+    grid-column:4/5;
+}
+.nineButton{
+    grid-row:4/5 ;
+    grid-column:1/2;
+}
+.additionButton{
+    grid-row:1/2 ;
+    grid-column:4/6;
+}
+.subtractionButton{
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+.multiplyButton{
+    grid-row:1/2 ;
+    grid-column:2/4;
+}
+.divideButton{
+    grid-row:2/3 ;
+    grid-column:5/6;
+    
+}
+.ceroButton{
+    grid-row:4/5;
+    grid-column:2/3;   
+}
+.equalButton{
+    grid-column: 3/6;
+    grid-row:4/5 ;
+  
+}
+.caButton{
+    grid-row:1/2;
+    grid-column:1/3;
 }
